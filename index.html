@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoftwarepLoit All Token</title>
+</head>
+<body>
+<script type="module">
+    const LISTS = {"softwareploit-aptos":{"name":"Softwareploit Aptos","keywords":["softwareploit","aptos"],"logoURI":"https://softwareploit.top/logo.png","sort":true,"schema":"aptos","test":{"skipLogo":true,"aptos":true}},"softwareploit-zksync-default":{"name":"Softwareploit Zksync Default","keywords":["softwareploit","default","zksync"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-linea-default":{"name":"Softwareploit Linea Default","keywords":["softwareploit","default","linea"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-base-default":{"name":"Softwareploit Base Default","keywords":["softwareploit","default","base"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-polygon-zkevm-default":{"name":"Softwareploit Zkevm Default","keywords":["softwareploit","default","polygon","zkevm"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-arbitrum-default":{"name":"Softwareploit Arbitrum Default","keywords":["softwareploit","default","arbitrum"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-eth-default":{"name":"Softwareploit Ethereum Default","keywords":["softwareploit","default","ethereum"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-eth-mm":{"name":"Softwareploit Ethereum MM","keywords":["softwareploit","mm","ethereum"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-bnb-mm":{"name":"Softwareploit BNB Chain MM","keywords":["softwareploit","mm","bnb"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-default":{"name":"Softwareploit Default","keywords":["softwareploit","default"],"logoURI":"https://softwareploit.top/logo.png","sort":false},"softwareploit-extended":{"name":"Softwareploit Extended","keywords":["softwareploit","extended"],"logoURI":"https://softwareploit.top/logo.png","sort":true},"softwareploit-top-100":{"name":"Softwareploit Top 100","keywords":["softwareploit","top 100"],"logoURI":"https://softwareploit.top/logo.png","sort":true},"softwareploit-top-15":{"name":"Softwareploit Top 15","keywords":["softwareploit","top 15"],"logoURI":"https://softwareploit.top/logo.png","sort":true},"coingecko":{"name":"CoinGecko","keywords":["defi"],"logoURI":"https://softwareploitoken.github.io/img/coingecko.png","sort":true,"test":{"skipLogo":true,"aptos":false}},"cmc":{"name":"CoinMarketCap","keywords":["defi"],"logoURI":"https://ipfs.io/ipfs/QmQAGtNJ2rSGpnP6dh6PPKNSmZL8RTZXmgFwgTdy5Nz5mx","sort":true,"test":{"skipLogo":true,"aptos":false}},"softwareploit-mini":{"name":"Softwareploit Mini","keywords":["softwareploit","binance","mini program","mini"],"logoURI":"https://softwareploit.top/logo.png","sort":true},"softwareploit-mini-extended":{"name":"Softwareploit Mini Ext","keywords":["softwareploit","binance","mini program","mini","extended"],"logoURI":"https://softwareploit.top/logo.png","sort":true},"softwareploit-onramp":{"name":"softwareploit Onramp","keywords":["softwareploit","onramp"],"logoURI":"https://softwareploit.top/logo.png","sort":true}};
+
+    const lis = Object.keys(LISTS).map((list) => {
+      return `
+        <li>
+          <a href="/${list}.json">${list}</a>
+        </li>
+        <br />
+      `
+    });
+    const ul = document.createElement('ul');
+    ul.innerHTML = lis.join('');
+    document.body.appendChild(ul);
+  </script>
+</body>
+</html>
